@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mad Blendz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: white; /* Set background to white */
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column; /* Ensures footer sticks to bottom */
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #navbar a, .button {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        #navbar a:hover, .button:hover {
+            text-shadow: 0 0 8px white, 0 0 10px white, 0 0 12px white;
+        }
+
+        .navbar-header {
+            text-align: center;
+            color: white;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .main-header, .sub-header {
+            margin: 0;
+        }
+
+        .main-header {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .sub-header {
+            font-size: 24px;
+        }
+
+        .navbar-divider {
+            height: 2px;
+            background-color: white;
+            margin: 8px auto;
+            width: 80%;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 150px 20px 50px; /* Increased top padding */
+            border: 2px solid #000; /* Added border */
+            margin: 100px auto; /* Centers the content */
+            max-width: 600px; /* Limits the width */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a shadow for depth */
+        }
+
+        .contact-section img {
+            width: 200px; /* Adjust the size of the image */
+            height: auto;
+            border-radius: 100%; /* Make the image round */
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2, .contact-info p {
+            margin: 5px 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            color: #000; /* Changed icon color to black for visibility */
+            margin: 0 15px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #555;
+        }
+
+        .site-footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: auto; /* Pushes the footer to the bottom */
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                flex-direction: column;
+                margin: 150px 20px; /* Adjust for smaller screens */
+            }
+
+            .social-icons a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html#about-me">Bio</a>
+        <div class="navbar-header">
+            <div class="main-header">M.A.D BlendZ</div>
+            <hr class="navbar-divider"/>
+            <div class="sub-header">Pontiac</div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#location">Hours</a>
+    </nav>
+
+    <div class="contact-section" id="contact">
+        <img src="img/marcothebarber.png" alt="Your Name">
+        <div class="contact-info">
+            <h2>Marco</h2>
+            <p>Phone: (248) 574-2526</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/marcothubarber/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>Contact Us: info@madblendz.com | Phone: (248) 574-2526</p>
+        <p>&copy; 2024 M.A.D BlendZ. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad blendz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #navbar a, .button {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        #navbar a:hover, .button:hover {
+            color: white;
+            text-shadow: 0 0 8px white, 0 0 10px white, 0 0 12px white; /* Adds glow effect on hover */
+        }
+
+        .navbar-header {
+            text-align: center;
+            color: white;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .main-header, .sub-header {
+            margin: 0;
+        }
+
+        .main-header {
+            font-size: 36px;
+            font-weight: 700;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .sub-header {
+            font-size: 24px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .navbar-divider {
+            height: 2px;
+            background-color: white;
+            margin: 8px auto;
+            width: 80%;
+        }
+
+        #image-display {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        #image-display img {
+            max-width: 30%;
+            height: auto;
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            background-color: transparent;
+            color: white;
+            border: 3px solid white;
+            border-radius: 50px;
+            padding: 15px 30px;
+            cursor: pointer;
+            font-size: 22px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .about-me-section, .location-section {
+            background-color: black;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-me-section h1, .location-section h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .about-me-section img {
+            max-width: 40%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .site-footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            width: 100%;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: white;
+            text-shadow: 0 0 8px white, 0 0 10px white, 0 0 12px white; /* Adds glow effect on hover */
+        }
+
+        
+        @media (max-width: 768px) {
+            .navbar-header, .main-header, .sub-header {
+                font-size: 20px; 
+            }
+
+            #image-display img, .about-me-section img {
+                max-width: 90%; 
+            }
+
+            .button {
+                width: 100%; 
+                padding: 10px; 
+                font-size: 18px; 
+            }
+
+            .about-content, .location-section {
+                flex-direction: column; 
+                padding: 20px; 
+            }
+
+            .about-me-section h1, .location-section h2 {
+                font-size: 36px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay loop muted>
+        <source src="img/particles background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about-me">Bio</a>
+        <div class="navbar-header">
+            <div class="main-header">M.A.D BlendZ</div>
+            <hr class="navbar-divider"/>
+            <div class="sub-header">Pontiac</div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="#location">Hours</a>
+    </nav>
+
+    <div id="image-display">
+        <img src="img/Blendz logopng.png" alt="Display Image">
+    </div>
+
+    <a href="https://booksy.com/en-us/862044_marco-the-barber_barber-shop_23594_pontiac?do=invite&_branch_match_id=1143621737405203652&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVzzYrD00NLkt1cU4CAFGH%2FG0iAAAA" class="button">Book Now</a>
+
+    <div class="about-me-section" id="about-me">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <img src="img/marcothebarber.png" alt="About Me Image">
+            <div class="text-and-button">
+                <p>Welcome to Mad Blendz, where precision meets artistry. At the heart of Pontiac, MI, Mad Blendz isn't just a barbershop—it's a destination where style is crafted and refined. Spearheaded by Marco, our CEO and lead barber, we're proud to boast a perfect 5.0/5 rating on Booksy, a testament to our commitment to excellence in every cut.
+
+                    Marco's reputation in the Oakland County area is unmatched. His approach combines speed with meticulous attention to detail, ensuring every client leaves not just satisfied, but truly impressed. At Mad Blendz, we understand the importance of a great haircut—it's an extension of your personal style and confidence. That's why Marco doesn't just cut hair; he crafts experiences tailored to each individual's preferences and needs.
+                    
+                    Clients rave about Marco's work, with reviews highlighting the unparalleled quality of his fades—"Hairline so sharp, you could cut diamonds; better fade than Kobe, ngl." It's feedback like this that cements Mad Blendz as a cut above the rest.</p>
+                <a href="https://booksy.com/en-us/862044_marco-the-barber_barber-shop_23594_pontiac?do=invite&_branch_match_id=1143621737405203652&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVzzYrD00NLkt1cU4CAFGH%2FG0iAAAA" class="button">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="location-section" id="location">
+        <h2>Location</h2>
+        <a href="https://www.google.com/maps/place/392+W+Huron+St,+Pontiac,+MI+48341/@42.6364625,-83.3096472,17z/data=!3m1!4b1!4m6!3m5!1s0x8824be5bb1d7db95:0xa006ec22845709ef!8m2!3d42.6364625!4d-83.3070723!16s%2Fg%2F11f4kslt02?entry=ttu" target="_blank">
+            <img src="img/Gmapsblendz.png" alt="Clickable Map Image">
+        </a>
+        <p>Hours | Mon: 11am - 7pm | Tues - Thurs: 11am - 8pm | Fri: 9am - 8pm | Sat: 7am - 5pm | *Sunday Closed</p>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>Contact Us: info@madblendz.com | Phone: (248) 574-2526</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/marcothubarber/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 M.A.D BlendZ. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
